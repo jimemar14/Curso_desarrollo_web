@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;500&family=Lato:ital,wght@0,300;0,700;1,700&family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/5c75e95aae.js" crossorigin="anonymous"></script>
+    <title>El Turista</title>
+</head>
+<body>
+    <header id="header">
+        <div class="contenedorFlex">
+            <div class="logo"><a href="index.html"><img src="img/El Turista.png" alt="Logo El turista"></a></div>
+            <nav class="navegacionPrincipal">
+                <ul>
+                    <li><a href="">Inicio</a></li>
+                    <li><a href="destinos.html">Destinos</a></li>
+                    <li><a href="#contactoPrincipal">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="menuHamburguesa">
+                <i class="fas fa-solid fa-bars"></i>
+            </div>
+        </div>
+        </header>
+
+    <div class="gridPadre">
+        <div id="banner" class="banner">
+            <img src="img/banner.png" alt="Banner principal">
+        </div>
+        <main id="resumen" class="contenedorFlex">
+            <div class="column">
+                <h1>25 años recorriendo el país y el mundo</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis illo molestiae beatae, nesciunt obcaecati explicabo aliquid tempora, cumque voluptas quos, velit possimus aliquam? Molestiae, ut consequatur neque sed quo eveniet.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore quam corporis asperiores repellendus quisquam enim saepe, voluptate perferendis at necessitatibus dolores magni sit! Aliquam minima nemo suscipit est voluptatum totam?
+                </p>
+            </div>
+        </main>
+        <section id="destinos" class="destinos contenedorFlex">
+            <div class="column">
+                    <h2 class="titulo">Algunos de los destinos más visitados</h2>
+                <div class="galeria">
+                    <img src="img/cataratas.jpg" alt="Cataratas">
+                    <img src="img/rio.jpg" alt="Río de Janeiro">
+                    <img src="img/bariloche.jpg" alt="Bariloche">
+                    <img src="img/londres.jpg" alt="Londres">
+                </div>
+                <div class="contenedorBoton">
+                    <a href="destinos.html" class="boton claro">Conocé más</a>
+                </div>
+            </div>
+        </section>
+        <div id="contactoPrincipal" class="contacto contenedorFlex column">
+            <h2 class="titulo">Contactanos</h2>
+            <form class="formulario">
+                <div class="contenedorInput">
+                    <input class="campo" type="text" placeholder="Nombre">
+                    <input class="campo" type="text" placeholder="Apellido">
+                    <input class="campo" type="email" placeholder="Email">
+                </div>
+                <textarea class="campo" name="mensaje" id="mensaje" cols="30" rows="10"
+                    placeholder="Ingrese su mensaje"></textarea>
+                <input class="boton" type="submit">
+                <input class="boton" type="reset">
+            </form>
+        </div>
+    </div>
+    <footer id="footer" class="contenedorFlex">
+        <div class="redesSociales">
+            <h2>Redes sociales</h2>
+            <div class="iconos">
+            <i class="fa-brands fa-facebook-square"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter-square"></i>
+        </div>
+        </div>
+        <div class="copyright">
+            <p>- Página creada por Jimena Martinez -</p>
+        </div>
+    </footer>
+</body>
+</html>

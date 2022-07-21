@@ -1,0 +1,377 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Fira Sans', sans-serif;
+}
+/*HEADER*/
+header{
+    background-color: #F7ECDE;
+    color: #54BAB9;
+}
+
+.contenedorFlex{
+    display: flex;
+    width: auto;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+.logo{
+    height: 200px;
+    width: 200px;
+}
+
+.logo img{
+    height: 200px;
+    width: auto;
+}
+
+nav ul li{
+    text-decoration: none;
+    display: inline-block;
+}
+nav ul li a{
+    color: #54BAB9;
+    font-size: 25px;
+    margin: 0 25px;
+    font-weight: 300;
+    text-decoration-line: none;
+}
+
+nav ul li a:hover{
+    font-weight: 700;
+}
+
+.menuHamburguesa{
+    font-size: 30px;
+}
+
+@media (max-width: 768px ){
+    nav ul li a{
+        display: none;
+    }
+    .headerFlex{
+        justify-content: space-around;
+    }
+}
+@media (min-width: 768px ){
+    .menuHamburguesa{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 900px) {
+    .headerFlex{
+        margin: 0 40px;
+    }
+}
+
+/*BANNER*/
+
+.banner{
+    height: auto;
+}
+
+
+.banner img{
+    width: 100%;
+    height: 100%;
+}
+
+
+/*MAIN*/
+
+main{
+    background-color: #F7ECDE;
+    color: #54BAB9;
+    height: 100vh;
+    padding: 25px 100px;
+}
+
+.column{
+    flex-direction: column;
+    justify-content: center;
+    /* padding: 50px; */
+
+}
+
+main h1{
+    font-size: 60px;
+    margin-bottom: 60px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+main p{
+    font-weight: 300;
+    font-size: 25px;
+    text-align: center;
+    line-height: 1.5;
+}
+/*DESTINOS*/
+
+.destinos{
+    background-color: #18978F;
+    color: #F7ECDE;
+    height: auto;
+}
+
+
+.titulo{
+    font-size: 60px;
+    margin: 100px;
+    text-align: center;
+    font-weight: 300;
+    border-bottom: 4px solid;
+}
+
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.galeria img{
+    width: 300px;
+    height: 300px;
+}
+
+.contenedorBoton a{
+    display: block;
+    margin: 50px;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* CONTACTO */
+
+.contacto{
+    height: auto;
+    color: #54BAB9;
+    background-color: #F7ECDE;
+    padding-bottom: 40px; 
+}
+
+.campo{
+    display: block;
+    width: 300px;
+    margin: 10px;
+    padding: 15px;
+    border: none;
+    border-bottom: #18978F 1px solid;
+    background-color: #F7ECDE;
+}
+textarea::placeholder, input::placeholder{
+    color: #18978F;
+    font-style: italic;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+
+
+.boton{
+    background-color: #18978F;
+    color: #F7ECDE;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: 700;
+    border: none;
+}
+
+.claro{
+    /* background-color: #54BAB9; */
+    border: 5px solid #F7ECDE;
+}
+.claro:hover{
+    background-color: #54BAB9;
+    transition: 2s;
+}
+
+.contacto h2{
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: #18978F;
+    color: #F7ECDE;
+    height: 200px;
+}
+
+i{
+    font-family: fontawesome;
+    font-size: 30px;
+    font-style: normal;
+    margin: 25px 5px;
+    display: inline-block;
+    text-align: center;
+}
+
+.iconos{
+    display: inline-block;
+    text-align: center;
+}
+
+.redesSociales{
+    text-align: center;
+}
+.redesSociales h2{
+    margin: 25px 0;
+
+}
+
+.copyright p {
+    font-weight: 300;
+    font-size: 25px;
+    text-transform: uppercase;
+    text-shadow: #18978F;
+    margin-bottom: 25px;
+}
+
+@media (max-width: 768px){
+    footer{
+        flex-direction: column;
+    }
+
+}
+
+/*GRID*/
+
+
+#header{
+    grid-area: header;
+}
+
+#banner{
+    grid-area: banner;
+}
+
+#resumen{
+    grid-area: resumen;
+}
+
+#destinos{
+    grid-area: destinos;
+}
+
+#contactoPrincipal{
+    grid-area: contacto;
+}
+
+#footer{
+    grid-area: footer;
+}
+
+
+@media (min-width: 1024px){
+    .gridPadre{
+        display: grid;
+        grid-template-areas:
+        "banner  banner"
+        "destinos destinos"
+        "resumen contacto";
+    }
+}
+
+
+
+/*destinos.html*/
+.opcion{
+    padding: 50px;
+    margin: 25px;
+    border: 1px solid #18978F;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 768px){
+    .opcion{
+        flex-direction: column;
+        padding: 15px;
+    }
+}
+
+.imagen{
+    height: auto;
+    width: 100%;
+    margin: 0;
+}
+
+.imagen img{
+    width: 100%;
+}
+
+.descripcion{
+    color: #18978F;
+    text-align: center;
+    width: 50%;
+    padding: 25px;
+}
+.descripcion h2{
+    font-size: 50px;
+    margin: 25px auto;
+}
+
+.descripcion p{
+    font-weight: 300;
+}
+
+
+/*GRID*/
+
+#bariloche{
+    grid-area: bariloche;
+}
+
+#jujuy{
+    grid-area: jujuy;
+}
+
+#cataratas{
+    grid-area: cataratas;
+}
+
+#barcelona{
+    grid-area: barcelona;
+}
+
+#cataratas{
+    grid-area: cataratas;
+}
+
+#londres{
+    grid-area: londres;
+}
+
+#rio{
+    grid-area: rio;
+}
+
+#paris{
+    grid-area: paris;
+}
+
+@media (min-width: 1024px) {
+    .padreGrid{
+        display: grid;
+        grid-template-areas:
+        "cataratas cataratas"
+        "bariloche jujuy"
+        "rio rio"
+        "barcelona londres"
+        "paris paris";
+    }
+}
+
+
+
+
